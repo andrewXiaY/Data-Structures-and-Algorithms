@@ -14,9 +14,10 @@ def trap_water(arr):
     left_max[0] = arr[0]
     right_max[-1] = arr[-1]
 
+    # 从左往右找到当前最高柱子
     for i in range(1, size):
         left_max[i] = max(arr[i], left_max[i - 1])
-
+    # 从右往左找到当前最高的柱子
     for i in range(size - 2, -1, -1):
         right_max[i] = max(arr[i], right_max[i + 1])
 
