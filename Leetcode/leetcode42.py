@@ -53,10 +53,10 @@ def trap_water_2pointers(arr):
 
 
 if __name__ == '__main__':
-    case1 = [4,2,0,3,2,5]
+    case1 = [4, 2, 0, 3, 2, 5]
     print(trap_water(case1))  # answer should be 9
 
-    case2 = [0,1,0,2,1,0,1,3,2,1,2,1]
+    case2 = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
     print(trap_water(case2))  # answer should be 6
 
     print(trap_water_2pointers(case1))

@@ -10,4 +10,4 @@
 # initialize the accumulative sum array by 0 with length len(nums) + 1
 
 
-# it is very easy, so do not show the answer here
+# it is very easy
