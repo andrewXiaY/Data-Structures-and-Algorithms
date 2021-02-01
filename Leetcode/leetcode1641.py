@@ -40,6 +40,15 @@ def count_vowel_strings(n):
     return solve(n, 5, dp)
 
 
+# 方法2
+def solve2(n):
+    dp = [1] * 5
+    for i in range(2, n + 1):
+        for j in range(3, -1, -1):
+            dp[j] += dp[j + 1]
+    return sum(dp)
+
+
 if __name__ == '__main__':
     case = 4
     assert count_vowel_strings(case) == 70

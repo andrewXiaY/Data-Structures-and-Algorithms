@@ -24,6 +24,12 @@
 
 
 # By induction, we can get f(n) = (k - 1) (f(n - 1) + f(n - 2))
+"""
+只有两种情况：
+第一：第i个post和第i-1个相同颜色 (k - 1) * f(i - 2) (因为颜色相同那么第i-2个肯定和i，i-1不同)
+第二：第i个post和第i-1个不同颜色 (k - 1) * f(i - 1)
+"""
+
 
 def solve(n, k):
     if n == 0 or k == 0:
