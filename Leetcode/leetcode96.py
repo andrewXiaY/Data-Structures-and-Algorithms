@@ -18,6 +18,7 @@ F(i, n) 代表长度为n的序列，且以i为root的BST的个数（1 <= i <= n�
 2。 长度相同的序列独特结构的BST的数目是相同的
 """
 
+
 def solve(n):
     dp = [0] * (n + 1)
     dp[0] = 1
@@ -30,3 +31,4 @@ def solve(n):
     return dp[n]
 
 print(solve(3))
+
